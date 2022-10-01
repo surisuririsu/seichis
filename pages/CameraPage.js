@@ -2,9 +2,8 @@ import { Camera } from 'expo-camera';
 import * as MediaLibrary from 'expo-media-library';
 import { useEffect, useRef } from 'react';
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import sig_2_1 from '../assets/sigururi/sig-2-1.jpg';
 
-export default function CameraPage() {
+const CameraPage = ({ src, onBack }) => {
   const cameraRef = useRef(null);
   const [permission, requestPermission] = Camera.useCameraPermissions();
 
@@ -27,9 +26,9 @@ export default function CameraPage() {
     <View style={styles.container}>
       <Camera style={styles.camera} ref={cameraRef}>
         <TouchableOpacity onPress={takePicture}>
-          <Image source={sig_2_1} style={styles.image} />
+          <Image source={src} style={styles.image} />
         </TouchableOpacity>
-        <TouchableOpacity style={styles.back} onPress={() => {}}>
+        <TouchableOpacity style={styles.back} onPress={onBack}>
           <Text style={styles.arrow}>←</Text>
         </TouchableOpacity>
       </Camera>
@@ -68,3 +67,5 @@ const styles = StyleSheet.create({
     resizeMode: 'contain',
   },
 });
+
+export default CameraPage;
