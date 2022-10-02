@@ -70,6 +70,56 @@ import ds_yaka from '../assets/denesupi/yaka.jpg'
 import ds_yuna from '../assets/denesupi/yuna.jpg'
 import ds_yuri from '../assets/denesupi/yuri.jpg'
 
+import tomo_key_visual from '../assets/tomozaki/key-visual.jpg';
+import tomo_omiya_1 from '../assets/tomozaki/omiya-1.jpg';
+import tomo_omiya_2 from '../assets/tomozaki/omiya-2.jpg';
+import tomo_omiya_3 from '../assets/tomozaki/omiya-3.jpg';
+import tomo_omiya_4 from '../assets/tomozaki/omiya-4.jpg';
+import tomo_omiya_5 from '../assets/tomozaki/omiya-5.jpg';
+import tomo_omiya_6 from '../assets/tomozaki/omiya-6.jpg';
+import tomo_omiya_7 from '../assets/tomozaki/omiya-7.jpg';
+import tomo_omiya_8 from '../assets/tomozaki/omiya-8.jpg';
+import tomo_omiya_9 from '../assets/tomozaki/omiya-9.jpg';
+import tomo_omiya_10 from '../assets/tomozaki/omiya-10.jpg';
+import tomo_kitayono_1 from '../assets/tomozaki/kitayono-1.jpg';
+import tomo_kitayono_2 from '../assets/tomozaki/kitayono-2.jpg';
+import tomo_kitayono_3 from '../assets/tomozaki/kitayono-3.jpg';
+import tomo_kitayono_4 from '../assets/tomozaki/kitayono-4.jpg';
+import tomo_kitayono_5 from '../assets/tomozaki/kitayono-5.jpg';
+import tomo_kitayono_6 from '../assets/tomozaki/kitayono-6.jpg';
+import tomo_kitayono_7 from '../assets/tomozaki/kitayono-7.jpg';
+import tomo_kitayono_8 from '../assets/tomozaki/kitayono-8.jpg';
+import tomo_kitayono_9 from '../assets/tomozaki/kitayono-9.jpg';
+import tomo_kitayono_10 from '../assets/tomozaki/kitayono-10.jpg';
+import tomo_kitayono_11 from '../assets/tomozaki/kitayono-11.jpg';
+import tomo_kitayono_12 from '../assets/tomozaki/kitayono-12.jpg';
+import tomo_shibuya_1 from '../assets/tomozaki/shibuya-1.jpg';
+import tomo_shibuya_2 from '../assets/tomozaki/shibuya-2.jpg';
+import tomo_shibuya_3 from '../assets/tomozaki/shibuya-3.jpg';
+import tomo_shibuya_4 from '../assets/tomozaki/shibuya-4.jpg';
+import tomo_hiwa_1 from '../assets/tomozaki/hiwa-1.jpg';
+import tomo_hiwa_2 from '../assets/tomozaki/hiwa-2.jpg';
+import tomo_hiwa_3 from '../assets/tomozaki/hiwa-3.jpg';
+import tomo_hiwa_4 from '../assets/tomozaki/hiwa-4.jpg';
+import tomo_hiwa_5 from '../assets/tomozaki/hiwa-5.jpg';
+import tomo_hiwa_6 from '../assets/tomozaki/hiwa-6.jpg';
+import tomo_hiwa_7 from '../assets/tomozaki/hiwa-7.jpg';
+import tomo_hiwa_8 from '../assets/tomozaki/hiwa-8.jpg';
+import tomo_hiwa_9 from '../assets/tomozaki/hiwa-9.jpg';
+import tomo_hiwa_10 from '../assets/tomozaki/hiwa-10.jpg';
+import tomo_eyecatch_1 from '../assets/tomozaki/eyecatch-1.jpg';
+import tomo_eyecatch_2 from '../assets/tomozaki/eyecatch-2.jpg';
+import tomo_eyecatch_3 from '../assets/tomozaki/eyecatch-3.jpg';
+import tomo_eyecatch_4 from '../assets/tomozaki/eyecatch-4.jpg';
+import tomo_eyecatch_5 from '../assets/tomozaki/eyecatch-5.jpg';
+import tomo_eyecatch_6 from '../assets/tomozaki/eyecatch-6.jpg';
+import tomo_eyecatch_7 from '../assets/tomozaki/eyecatch-7.jpg';
+import tomo_eyecatch_8 from '../assets/tomozaki/eyecatch-8.jpg';
+import tomo_eyecatch_9 from '../assets/tomozaki/eyecatch-9.jpg';
+import tomo_eyecatch_10 from '../assets/tomozaki/eyecatch-10.jpg';
+import tomo_eyecatch_11 from '../assets/tomozaki/eyecatch-11.jpg';
+import tomo_eyecatch_12 from '../assets/tomozaki/eyecatch-12.jpg';
+
 import rs_1 from '../assets/restage/1.jpg'
 import rs_2 from '../assets/restage/2.jpg'
 import rs_3 from '../assets/restage/3.jpg'
@@ -81,6 +131,11 @@ import rs_8 from '../assets/restage/8.jpg'
 import rs_9 from '../assets/restage/9.jpg'
 import rs_10 from '../assets/restage/10.jpg'
 import rs_11 from '../assets/restage/11.jpg'
+
+import airblue_1 from '../assets/miraicanvas/airblue-1.jpg';
+import flower_1 from '../assets/miraicanvas/flower-1.jpg';
+import nene_1 from '../assets/miraicanvas/nene-1.jpg';
+import nene_2 from '../assets/miraicanvas/nene-2.jpg';
 
 const SIGURURI_SCENES = [
   { title: 'アイキャッチ 2-1 (渚の駅たてやま)', src: sig_2_1 },
@@ -160,6 +215,58 @@ const DENESUPI_SCENES = [
   { title: 'きょん', src: ds_kyon },
 ];
 
+const TOMOZAKI_SCENES = [
+  { title: '[大宮] キービジュアル', src: tomo_key_visual },
+  { title: '[大宮] 第1話 葵 1 (ミニストップ大宮東口店)', src: tomo_omiya_10 },
+  { title: '[大宮] 第3話 文也 1 (大宮駅中央改札前)', src: tomo_omiya_3 },
+  { title: '[大宮] 第5話 優鈴 1 (大宮駅北改札内)', src: tomo_omiya_1 },
+  { title: '[大宮] 第5話 優鈴 2 (大宮駅北改札内)', src: tomo_omiya_2 },
+  { title: '[大宮] 第5話 優鈴 3 (大宮駅中央改札前)', src: tomo_omiya_4 },
+  { title: '[大宮] 第5話 優鈴 4 (ルミネ大宮屋上庭園)', src: tomo_omiya_5 },
+  { title: '[大宮] 第5話 優鈴 5 (ルミネ大宮屋上庭園)', src: tomo_omiya_6 },
+  { title: '[大宮] 第9話 葵 1 (ルミネ大宮屋上庭園)', src: tomo_omiya_7 },
+  { title: '[大宮] 第12話 風香 1 (大宮駅西口)', src: tomo_omiya_8 },
+  { title: '[大宮] 第12話 風香 2 (大宮駅西口)', src: tomo_omiya_9 },
+  { title: '[北与野] 第2話 みなみ 1 (個別教室のトライ北与野駅前校)', src: tomo_kitayono_4 },
+  { title: '[北与野] 第2話 みなみ 2 (栄光ゼミナール北与野校)', src: tomo_kitayono_5 },
+  { title: '[北与野] 第2話 みなみ 3 (4-22下落合)', src: tomo_kitayono_6 },
+  { title: '[北与野] 第2話 みなみ 4 1 (下落合氷川神社)', src: tomo_kitayono_7 },
+  { title: '[北与野] 第4話 葵 1 (fino)', src: tomo_kitayono_10 },
+  { title: '[北与野] 第6話 みなみ 1 (西谷公園)', src: tomo_kitayono_11 },
+  { title: '[北与野] 第6話 みなみ 2 (西谷公園)', src: tomo_kitayono_12 },
+  { title: '[北与野] 第8話 看板 1 (北与野駅)', src: tomo_kitayono_1 },
+  { title: '[北与野] 第8話 みなみ 1 (下落合氷川神社)', src: tomo_kitayono_8 },
+  { title: '[北与野] 第10話 みなみ 1 (北与野駅南口)', src: tomo_kitayono_3 },
+  { title: '[北与野] 第11話 葵 1 (北与野駅)', src: tomo_kitayono_2 },
+  { title: '[北与野] 第11話 みなみ 1 (ケヤキ薬局前)', src: tomo_kitayono_9 },
+  { title: '[渋谷] 第9話 風香 1 (ハチ公)', src: tomo_shibuya_1 },
+  { title: '[渋谷] 第9話 風香 2 (Bershka渋谷店)', src: tomo_shibuya_2 },
+  { title: '[渋谷] 第9話 風香 3 (スペイン坂)', src: tomo_shibuya_3 },
+  { title: '[渋谷] 第9話 風香 4 (hiki cafe)', src: tomo_shibuya_4 },
+  { title: '[東岩槻] 第1話 学校 1 (開智学園)', src: tomo_hiwa_1 },
+  { title: '[東岩槻] 第1話 文也 1 (松本運送(有))', src: tomo_hiwa_3 },
+  { title: '[東岩槻] 第2話 文也 1 (開智学園)', src: tomo_hiwa_2 },
+  { title: '[東岩槻] 第2話 葵 1 (東岩槻駅)', src: tomo_hiwa_10 },
+  { title: '[東岩槻] 第4話 優鈴 1 (花積)', src: tomo_hiwa_5 },
+  { title: '[東岩槻] 第4話 優鈴 2 (花積)', src: tomo_hiwa_6 },
+  { title: '[東岩槻] 第4話 優鈴 3 (花積)', src: tomo_hiwa_7 },
+  { title: '[東岩槻] 第4話 優鈴 4 (花積)', src: tomo_hiwa_8 },
+  { title: '[東岩槻] 第7話 みなみ 1 (ローソン東岩槻駅北口店)', src: tomo_hiwa_9 },
+  { title: '[東岩槻] 第8話 みなみ 1 (表慈恩寺団地前の公園)', src: tomo_hiwa_4 },
+  { title: 'アイキャッチ 1 (東岩槻駅)', src: tomo_eyecatch_1 },
+  { title: 'アイキャッチ 2 (大宮駅)', src: tomo_eyecatch_2 },
+  { title: 'アイキャッチ 3 (東岩槻駅)', src: tomo_eyecatch_3 },
+  { title: 'アイキャッチ 4 (東岩槻駅)', src: tomo_eyecatch_4 },
+  { title: 'アイキャッチ 5 (東武鉄道)', src: tomo_eyecatch_5 },
+  { title: 'アイキャッチ 6 (西谷公園)', src: tomo_eyecatch_6 },
+  { title: 'アイキャッチ 7 (東岩槻駅)', src: tomo_eyecatch_7 },
+  { title: 'アイキャッチ 8 (東岩槻駅)', src: tomo_eyecatch_8 },
+  { title: 'アイキャッチ 9 (大宮駅)', src: tomo_eyecatch_9 },
+  { title: 'アイキャッチ 10 (Kenny\'s Family Village)', src: tomo_eyecatch_10 },
+  { title: 'アイキャッチ 11 (荒川運動公園)', src: tomo_eyecatch_11 },
+  { title: 'アイキャッチ 12 (大宮駅)', src: tomo_eyecatch_12 },
+];
+
 const RESTAGE_SCENES = [
   { title: 'ED-1', src: rs_1 },
   { title: 'ED-2', src: rs_2 },
@@ -174,11 +281,20 @@ const RESTAGE_SCENES = [
   { title: 'ED-11', src: rs_11 },
 ];
 
+const MIRAI_CANVAS_SCENES = [
+  { title: 'AiRBLUE', src: airblue_1 },
+  { title: 'Flower', src: flower_1 },
+  { title: 'ねーね 1', src: nene_1 },
+  { title: 'ねーね 2', src: nene_2 },
+];
+
 const SCENE_GROUPS = [
   { title: '戦翼のシグルドリーヴァ', scenes: SIGURURI_SCENES },
   { title: '夏の花火と君と青', scenes: NATSU_HANABI_SCENES },
   { title: 'デネブとスピカ', scenes: DENESUPI_SCENES },
-  { title: 'Re:ステージ！ ドリームデイズ♪', scenes: RESTAGE_SCENES }
+  { title: '弱キャラ友崎くん', scenes: TOMOZAKI_SCENES },
+  { title: 'Re:ステージ！ ドリームデイズ♪', scenes: RESTAGE_SCENES },
+  { title: 'ミライキャンバス', scenes: MIRAI_CANVAS_SCENES },
 ];
 
 const ALL_IMAGES = SCENE_GROUPS.reduce((acc, cur) => acc.concat(cur.scenes.map(item => item.src)), []);

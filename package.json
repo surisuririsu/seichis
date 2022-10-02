@@ -12,12 +12,9 @@
     "expo": "~46.0.13",
     "expo-asset": "~8.6.1",
     "expo-camera": "~12.3.0",
-    "expo-dev-client": "~1.2.1",
-    "expo-file-system": "~14.1.0",
     "expo-media-library": "~14.2.0",
     "expo-screen-orientation": "~4.3.0",
     "expo-splash-screen": "~0.16.2",
-    "expo-status-bar": "~1.4.0",
     "react": "18.0.0",
     "react-native": "0.69.6"
   },
