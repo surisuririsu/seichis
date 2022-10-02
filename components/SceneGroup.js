@@ -23,7 +23,7 @@ const SceneGroup = ({ title, scenes, selectScene }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    margin: 10,
+    marginBottom: 10,
   },
   expander: {
     backgroundColor: '#efefef',

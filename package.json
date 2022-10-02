@@ -8,6 +8,7 @@
     "ios": "expo start --ios"
   },
   "dependencies": {
+    "@react-native-community/slider": "4.2.3",
     "expo": "~46.0.13",
     "expo-asset": "~8.6.1",
     "expo-camera": "~12.3.0",
