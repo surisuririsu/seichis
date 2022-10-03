@@ -14,6 +14,14 @@ import sig_9_2 from '../assets/sigururi/sig-9-2.jpg';
 import sig_10_1 from '../assets/sigururi/sig-10-1.jpg';
 import sig_10_2 from '../assets/sigururi/sig-10-2.jpg';
 import sig_11_1 from '../assets/sigururi/sig-11-1.jpg';
+import sig_uh_1 from '../assets/sigururi/uh-1.jpg';
+import sig_uh_2 from '../assets/sigururi/uh-2.jpg';
+import sig_uh_3 from '../assets/sigururi/uh-3.jpg';
+import sig_uh_4 from '../assets/sigururi/uh-4.jpg';
+import sig_uh_5 from '../assets/sigururi/uh-5.jpg';
+import sig_uh_6 from '../assets/sigururi/uh-6.jpg';
+import sig_uh_7 from '../assets/sigururi/uh-7.jpg';
+import sig_uh_8 from '../assets/sigururi/uh-8.jpg';
 
 import nh_c1_kyon_1 from '../assets/natsuhanabi/c1-kyon-1.jpg'
 import nh_c1_kyon_2 from '../assets/natsuhanabi/c1-kyon-2.jpg'
@@ -131,11 +139,30 @@ import rs_8 from '../assets/restage/8.jpg'
 import rs_9 from '../assets/restage/9.jpg'
 import rs_10 from '../assets/restage/10.jpg'
 import rs_11 from '../assets/restage/11.jpg'
+import rs_a_1 from '../assets/restage/a-1.jpg'
+
+import flower_trek_1 from '../assets/cue/flower-trek-1.jpg';
+import what_a_girl_wants_1 from '../assets/cue/what-a-girl-wants-1.jpg';
 
 import airblue_1 from '../assets/miraicanvas/airblue-1.jpg';
 import flower_1 from '../assets/miraicanvas/flower-1.jpg';
 import nene_1 from '../assets/miraicanvas/nene-1.jpg';
 import nene_2 from '../assets/miraicanvas/nene-2.jpg';
+
+import sukisuki_1 from '../assets/sukisuki/1.jpg';
+import sukisuki_2 from '../assets/sukisuki/2.jpg';
+import sukisuki_3 from '../assets/sukisuki/3.jpg';
+import sukisuki_4 from '../assets/sukisuki/4.jpg';
+import sukisuki_5 from '../assets/sukisuki/5.jpg';
+import sukisuki_6 from '../assets/sukisuki/6.jpg';
+import sukisuki_7 from '../assets/sukisuki/7.jpg';
+import sukisuki_8 from '../assets/sukisuki/8.jpg';
+import sukisuki_9 from '../assets/sukisuki/9.jpg';
+import sukisuki_10 from '../assets/sukisuki/10.jpg';
+import sukisuki_11 from '../assets/sukisuki/11.jpg';
+import sukisuki_12 from '../assets/sukisuki/12.jpg';
+
+import tsukimi from '../assets/other/tsukimi.jpg';
 
 const SIGURURI_SCENES = [
   { title: 'アイキャッチ 2-1 (渚の駅たてやま)', src: sig_2_1 },
@@ -154,6 +181,14 @@ const SIGURURI_SCENES = [
   { title: 'アイキャッチ 10-1 (房州うちわ)', src: sig_10_1 },
   { title: 'アイキャッチ 10-2 (房総フラワーライン)', src: sig_10_2 },
   { title: 'アイキャッチ 11-1 (館山湾花火大会)', src: sig_11_1 },
+  { title: '海ほたる 1', src: sig_uh_1 },
+  { title: '海ほたる 2', src: sig_uh_2 },
+  { title: '海ほたる 3', src: sig_uh_3 },
+  { title: '海ほたる 4', src: sig_uh_4 },
+  { title: '海ほたる 5', src: sig_uh_5 },
+  { title: '海ほたる 6', src: sig_uh_6 },
+  { title: '海ほたる 7', src: sig_uh_7 },
+  { title: '海ほたる 8', src: sig_uh_8 },
 ];
 
 const NATSU_HANABI_SCENES = [
@@ -279,6 +314,12 @@ const RESTAGE_SCENES = [
   { title: 'ED-9', src: rs_9 },
   { title: 'ED-10', src: rs_10 },
   { title: 'ED-11', src: rs_11 },
+  { title: '秋葉原', src: rs_a_1 },
+];
+
+const CUE_SCENES = [
+  { title: 'フラワートレック 開花前 (高尾山口駅)', src: flower_trek_1 },
+  { title: 'What a girl wants 開花前 (成田空港)', src: what_a_girl_wants_1 },
 ];
 
 const MIRAI_CANVAS_SCENES = [
@@ -288,13 +329,35 @@ const MIRAI_CANVAS_SCENES = [
   { title: 'ねーね 2', src: nene_2 },
 ];
 
+const SUKISUKI_SCENES = [
+  { title: '1', src: sukisuki_1 },
+  { title: '2', src: sukisuki_2 },
+  { title: '3', src: sukisuki_3 },
+  { title: '4', src: sukisuki_4 },
+  { title: '5', src: sukisuki_5 },
+  { title: '6', src: sukisuki_6 },
+  { title: '7', src: sukisuki_7 },
+  { title: '8', src: sukisuki_8 },
+  { title: '9', src: sukisuki_9 },
+  { title: '10', src: sukisuki_10 },
+  { title: '11', src: sukisuki_11 },
+  { title: '12', src: sukisuki_12 },
+];
+
+const OTHER_SCENES = [
+  { title: '月見バーガー', src: tsukimi },
+];
+
 const SCENE_GROUPS = [
   { title: '戦翼のシグルドリーヴァ', scenes: SIGURURI_SCENES },
   { title: '夏の花火と君と青', scenes: NATSU_HANABI_SCENES },
   { title: 'デネブとスピカ', scenes: DENESUPI_SCENES },
   { title: '弱キャラ友崎くん', scenes: TOMOZAKI_SCENES },
   { title: 'Re:ステージ！ ドリームデイズ♪', scenes: RESTAGE_SCENES },
+  { title: 'CUE!', scenes: CUE_SCENES },
   { title: 'ミライキャンバス', scenes: MIRAI_CANVAS_SCENES },
+  { title: '好きだよ、好き。', scenes: SUKISUKI_SCENES },
+  { title: 'Other', scenes: OTHER_SCENES },
 ];
 
 const ALL_IMAGES = SCENE_GROUPS.reduce((acc, cur) => acc.concat(cur.scenes.map(item => item.src)), []);
