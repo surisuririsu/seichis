@@ -5,7 +5,7 @@ import { Link, Stack, useLocalSearchParams } from "expo-router";
 import * as ScreenOrientation from "expo-screen-orientation";
 import { useEffect, useRef, useState } from "react";
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
-import { SCENES_BY_GROUP } from "@/utils/scenes";
+import SCENE_GROUPS from "@/scenes/imports";
 
 const ZOOM_FACTOR = 512;
 
@@ -15,9 +15,8 @@ export default function SceneScreen() {
   const [permission, requestPermission] = useCameraPermissions();
   const [zoom, setZoom] = useState(0);
 
-  const { src } = SCENES_BY_GROUP[local.group].find(
-    (scene) => scene.title == local.scene
-  );
+  const group = SCENE_GROUPS[local.group];
+  const src = group[local.scene];
 
   useEffect(() => {
     ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.LANDSCAPE);

@@ -1,17 +1,18 @@
 import { ScrollView } from "react-native";
 import { Stack, useLocalSearchParams } from "expo-router";
 import SceneRow from "@/components/SceneRow";
-import { SCENES_BY_GROUP } from "@/utils/scenes";
+import SCENE_GROUPS from "@/scenes/imports";
 
 export default function IndexScreen() {
   const local = useLocalSearchParams();
+  const group = SCENE_GROUPS[local.group];
 
   return (
     <>
       <Stack.Screen options={{ title: `${local.group}` }} />
       <ScrollView>
-        {SCENES_BY_GROUP[local.group].map(({ title, src }) => (
-          <SceneRow key={src} group={local.group} title={title} src={src} />
+        {Object.keys(group).map((title) => (
+          <SceneRow key={title} title={title} src={group[title]} />
         ))}
       </ScrollView>
     </>
