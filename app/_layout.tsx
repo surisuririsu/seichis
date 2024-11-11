@@ -1,22 +1,24 @@
-import { DefaultTheme, ThemeProvider } from '@react-navigation/native';
-import { Asset } from 'expo-asset';
-import { useFonts } from 'expo-font';
-import { Stack } from 'expo-router';
-import * as SplashScreen from 'expo-splash-screen';
-import { useEffect } from 'react';
-import 'react-native-reanimated';
-import { ALL_IMAGES } from '@/utils/scenes';
+import { DefaultTheme, ThemeProvider } from "@react-navigation/native";
+import { Asset } from "expo-asset";
+import { useFonts } from "expo-font";
+import { Stack } from "expo-router";
+import * as SplashScreen from "expo-splash-screen";
+import { useEffect } from "react";
+import "react-native-reanimated";
+import { ALL_IMAGES } from "@/utils/scenes";
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
   const [loaded] = useFonts({
-    SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
+    SpaceMono: require("../assets/fonts/SpaceMono-Regular.ttf"),
   });
 
   const cacheResources = async () => {
-    const cacheImages = ALL_IMAGES.map(image => Asset.fromModule(image).downloadAsync());
+    const cacheImages = ALL_IMAGES.map((image) =>
+      Asset.fromModule(image).downloadAsync()
+    );
     return Promise.all(cacheImages);
   };
 
@@ -34,9 +36,7 @@ export default function RootLayout() {
   return (
     <ThemeProvider value={DefaultTheme}>
       <Stack>
-        <Stack.Screen name="scenes" />
         <Stack.Screen name="index" />
-        <Stack.Screen name="+not-found" />
       </Stack>
     </ThemeProvider>
   );

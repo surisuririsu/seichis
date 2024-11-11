@@ -1,15 +1,15 @@
-import { CameraView, CameraType, useCameraPermissions } from "expo-camera";
+import Slider from "@react-native-community/slider";
+import { CameraView, useCameraPermissions } from "expo-camera";
 import * as MediaLibrary from "expo-media-library";
+import { Link, Stack, useLocalSearchParams } from "expo-router";
 import * as ScreenOrientation from "expo-screen-orientation";
 import { useEffect, useRef, useState } from "react";
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
-import Slider from "@react-native-community/slider";
-import { Link, Stack, useLocalSearchParams, useRouter } from "expo-router";
 import { SCENES_BY_GROUP } from "@/utils/scenes";
 
 const ZOOM_FACTOR = 512;
 
-const CameraPage = () => {
+export default function SceneScreen() {
   const local = useLocalSearchParams();
   const cameraRef = useRef(null);
   const [permission, requestPermission] = useCameraPermissions();
@@ -44,7 +44,7 @@ const CameraPage = () => {
 
   return (
     <View style={styles.container}>
-      <Stack.Screen options={{ headerShown: false }}></Stack.Screen>
+      <Stack.Screen options={{ headerShown: false }} />
       <CameraView style={styles.camera} ref={cameraRef} zoom={zoom}>
         <TouchableOpacity onPress={takePicture}>
           <Image source={src} style={styles.image} />
@@ -68,7 +68,7 @@ const CameraPage = () => {
       </CameraView>
     </View>
   );
-};
+}
 
 const styles = StyleSheet.create({
   container: {
@@ -114,5 +114,3 @@ const styles = StyleSheet.create({
     resizeMode: "contain",
   },
 });
-
-export default CameraPage;
