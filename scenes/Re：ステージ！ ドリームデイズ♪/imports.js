@@ -9,7 +9,6 @@ import image_ff6a2f75154160e9 from "./ED-6.jpg";
 import image_088d4445b04da032 from "./ED-7.jpg";
 import image_5b22a74357feaf96 from "./ED-8.jpg";
 import image_adc64c17f6738468 from "./ED-9.jpg";
-import image_b69776e5a4fdabe5 from "./秋葉原.jpg";
 
 const IMAGES = {
   'ED-1': image_9183a84b476ebc45,
@@ -23,7 +22,6 @@ const IMAGES = {
   'ED-7': image_088d4445b04da032,
   'ED-8': image_5b22a74357feaf96,
   'ED-9': image_adc64c17f6738468,
-  '秋葉原': image_b69776e5a4fdabe5,
 };
 
 export default IMAGES;

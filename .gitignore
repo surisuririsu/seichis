@@ -30,3 +30,6 @@ expo-env.d.ts
 
 
 **/__pycache__/
+
+scenes/*
+!scenes/Re：ステージ！ ドリームデイズ♪
